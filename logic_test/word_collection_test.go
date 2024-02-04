@@ -30,10 +30,6 @@ func wordCollection(words []string) [][]string {
 		collection = append(collection, words[i])
 
 		for j := i + 1; j < len(words); j++ {
-			if isAdded[j] {
-				continue
-			}
-
 			wordI := []rune(words[i])
 			wordJ := []rune(words[j])
 
